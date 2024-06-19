@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dcabs1 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-dcabs1@esm/index.mjs';
+import dcabs1 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-dcabs1@v0.0.1-esm/index.mjs';
 ```
 
 #### dcabs1( z )
@@ -74,7 +74,7 @@ var y = dcabs1( new Complex128( 5.0, -3.0 ) );
 
 import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-ctor@esm/index.mjs';
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
-import dcabs1 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-dcabs1@esm/index.mjs';
+import dcabs1 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-dcabs1@v0.0.1-esm/index.mjs';
 
 var z;
 var i;
