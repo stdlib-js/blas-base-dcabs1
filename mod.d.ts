@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2024 The Stdlib Authors.
@@ -16,22 +16,17 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var abs = require( '@stdlib/math-base-special-abs' );
-var real = require( '@stdlib/complex-float64-real' );
-var imag = require( '@stdlib/complex-float64-imag' );
-
-
-// MAIN //
+import { Complex128 } from '@stdlib/types/complex';
 
 /**
-* Computes the sum of the absolute value of the real and imaginary part of a double-precision complex floating-point number.
+* Computes the sum of the absolute values of the real and imaginary components of a double-precision complex floating-point number.
 *
-* @param {Complex128} z - complex number
-* @returns {number} result
+* @param z - complex number
+* @returns result
 *
 * @example
 * var Complex128 = require( '@stdlib/complex-float64-ctor' );
@@ -39,11 +34,9 @@ var imag = require( '@stdlib/complex-float64-imag' );
 * var v = dcabs1( new Complex128( 5.0, -3.0 ) );
 * // returns 8.0
 */
-function dcabs1( z ) {
-	return abs( real(z) ) + abs( imag(z) );
-}
+declare function dcabs1( z: Complex128 ): number;
 
 
 // EXPORTS //
 
-module.exports = dcabs1;
+export = dcabs1;
